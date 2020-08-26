@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="EspacoDeTupla.jnlp">
+  <information>
+    <title>EspacoDeTupla</title>
+    <vendor>Matheus</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="EspacoDeTupla.jar" size="7533" download="eager" />
+    <jar href="lib\asm-3.2.jar" size="43401" download="eager" />
+    <jar href="lib\asm-commons-3.2.jar" size="37619" download="eager" />
+    <jar href="lib\browser-dl.jar" size="3507" download="eager" />
+    <jar href="lib\browser.jar" size="128429" download="eager" />
+    <jar href="lib\checkconfigurationfile.jar" size="2747" download="eager" />
+    <jar href="lib\checkser.jar" size="2736" download="eager" />
+    <jar href="lib\classdep.jar" size="2734" download="eager" />
+    <jar href="lib\classserver.jar" size="2736" download="eager" />
+    <jar href="lib\computedigest.jar" size="2740" download="eager" />
+    <jar href="lib\computehttpmdcodebase.jar" size="2744" download="eager" />
+    <jar href="lib\destroy.jar" size="64304" download="eager" />
+    <jar href="lib\envcheck.jar" size="3667" download="eager" />
+    <jar href="lib\extra.jar" size="6635" download="eager" />
+    <jar href="lib\fiddler-dl.jar" size="117225" download="eager" />
+    <jar href="lib\fiddler.jar" size="119346" download="eager" />
+    <jar href="lib\group-dl.jar" size="4254" download="eager" />
+    <jar href="lib\group.jar" size="8553" download="eager" />
+    <jar href="lib\jarwrapper.jar" size="2728" download="eager" />
+    <jar href="lib\jini-core.jar" size="64717" download="eager" />
+    <jar href="lib\jini-ext.jar" size="1152367" download="eager" />
+    <jar href="lib\jsk-debug-policy.jar" size="10124" download="eager" />
+    <jar href="lib\jsk-dl.jar" size="62921" download="eager" />
+    <jar href="lib\jsk-lib.jar" size="305666" download="eager" />
+    <jar href="lib\jsk-platform.jar" size="978498" download="eager" />
+    <jar href="lib\jsk-policy.jar" size="30298" download="eager" />
+    <jar href="lib\jsk-resources.jar" size="3942" download="eager" />
+    <jar href="lib\mahalo-dl.jar" size="16193" download="eager" />
+    <jar href="lib\mahalo.jar" size="106560" download="eager" />
+    <jar href="lib\mercury-dl.jar" size="30013" download="eager" />
+    <jar href="lib\mercury.jar" size="120494" download="eager" />
+    <jar href="lib\norm-dl.jar" size="21360" download="eager" />
+    <jar href="lib\norm.jar" size="115244" download="eager" />
+    <jar href="lib\outrigger-dl.jar" size="57477" download="eager" />
+    <jar href="lib\outrigger-snaplogstore.jar" size="36793" download="eager" />
+    <jar href="lib\outrigger.jar" size="196450" download="eager" />
+    <jar href="lib\phoenix-dl.jar" size="18886" download="eager" />
+    <jar href="lib\phoenix-group.jar" size="40702" download="eager" />
+    <jar href="lib\phoenix-init.jar" size="2240" download="eager" />
+    <jar href="lib\phoenix.jar" size="84903" download="eager" />
+    <jar href="lib\preferredlistgen.jar" size="2741" download="eager" />
+    <jar href="lib\reggie-dl.jar" size="57326" download="eager" />
+    <jar href="lib\reggie.jar" size="144313" download="eager" />
+    <jar href="lib\sdm-dl.jar" size="3703" download="eager" />
+    <jar href="lib\serviceui.jar" size="16351" download="eager" />
+    <jar href="lib\sharedvm.jar" size="27512" download="eager" />
+    <jar href="lib\start.jar" size="61533" download="eager" />
+    <jar href="lib\sun-util.jar" size="125726" download="eager" />
+    <jar href="lib\tools.jar" size="234212" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="EspacoDeTupla" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="espacodetupla.EspacoDeTupla"  name="EspacoDeTupla" />
+  <update check="always"/>
+</jnlp>
