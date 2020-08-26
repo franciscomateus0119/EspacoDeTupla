@@ -5,10 +5,19 @@
  */
 package espacodetupla;
 
+import java.util.Scanner;
+import net.jini.space.JavaSpace;
+import espacodetupla.WriteMessage;
+import espacodetupla.SpaceHandler;
+
 /**
  *
  * @author Matheus
  */
 public class Cliente2 {
-    
+    public static void main(String[] args) {
+        SpaceHandler spaceHandler = SpaceHandler.getInstance();
+        spaceHandler.writeMessage("Testando Handler");
+        spaceHandler.readMessage();
+    }
 }
