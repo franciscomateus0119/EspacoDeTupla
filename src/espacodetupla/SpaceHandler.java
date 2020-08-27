@@ -1,10 +1,6 @@
 package espacodetupla;
 import net.jini.space.JavaSpace;
 
-/**
- *
- * @author Matheus
- */
 public class SpaceHandler {
     private static SpaceHandler instance;
     private JavaSpace space;
@@ -19,6 +15,7 @@ public class SpaceHandler {
                     System.exit(-1);
             } 
             System.out.println("O servico JavaSpace foi encontrado.");
+            System.out.println(space);
         }catch(Exception e){
             System.out.println("Não foi possível encontrar o espaço!");
             e.printStackTrace();

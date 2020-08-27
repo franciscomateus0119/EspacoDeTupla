@@ -24,7 +24,8 @@ public class ReadMessage {
                 }
                 if (msg.type.equals("Mensagem")) {
                     System.out.println("Mensagem recebida de " + msg.name + ": " + msg.content);
-                } else if (msg.type.equals("ChatSelect")) {
+                }
+                else if (msg.type.equals("ChatSelect")) {
                     System.out.println("Usuário " + msg.name + " se conectou ao chat " + msg.chatname);
                 }
             }
