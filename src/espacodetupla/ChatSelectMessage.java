@@ -4,12 +4,17 @@
  * and open the template in the editor.
  */
 package espacodetupla;
+
 import net.jini.core.entry.Entry;
-public class Message implements Entry {
+
+/**
+ *
+ * @author Matheus
+ */
+public class ChatSelectMessage  implements Entry {
     public String type;
     public String chatname;
     public String name;
-    public String content;
-    public Message() {
+    public ChatSelectMessage() {
     }
 }

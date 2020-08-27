@@ -22,7 +22,11 @@ public class ReadMessage {
                     System.out.println("Tempo de espera esgotado. Encerrando...");
                     System.exit(0);
                 }
-                System.out.println("Mensagem recebida: "+ msg.content);
+                if (msg.type.equals("Mensagem")) {
+                    System.out.println("Mensagem recebida de " + msg.name + ": " + msg.content);
+                } else if (msg.type.equals("ChatSelect")) {
+                    System.out.println("Usuário " + msg.name + " se conectou ao chat " + msg.chatname);
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
