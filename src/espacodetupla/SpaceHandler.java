@@ -24,12 +24,20 @@ public class SpaceHandler {
     }
     
     public static SpaceHandler getInstance(){
+        return SpaceHandlerHolder.INSTANCE;
+    }
+    
+    private static class SpaceHandlerHolder{
+        private static final SpaceHandler INSTANCE = new SpaceHandler();
+    }
+    /*
+    public static SpaceHandler getInstance(){
         if(instance == null){
             instance = new SpaceHandler();
         }
         return instance;
     }
-    
+    */
     public void writeMessage(String name, String message){
         try{
             Message msg = new Message();
