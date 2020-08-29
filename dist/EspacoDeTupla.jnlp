@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="EspacoDeTupla.jar" size="16039" download="eager" />
+    <jar href="EspacoDeTupla.jar" size="17321" download="eager" />
     <jar href="lib\asm-3.2.jar" size="43401" download="eager" />
     <jar href="lib\asm-commons-3.2.jar" size="37619" download="eager" />
     <jar href="lib\browser-dl.jar" size="3507" download="eager" />

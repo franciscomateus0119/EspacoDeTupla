@@ -8,11 +8,11 @@ import espacodetupla.ReadMessageThread;
 import espacodetupla.ReadMessageThread2;
 import espacodetupla.Client;
 
-public class Cliente {
+public class Cliente2 {
     public static void main(String[] args) {
-        
+        Client client = new Client();
         SpaceHandler spaceHandler = SpaceHandler.getInstance();
-        Runnable runnable = new ReadMessageThread2();
+        Runnable runnable = new ReadMessageThread();
         Thread thread = new Thread(runnable);
         thread.start();
         
@@ -23,9 +23,8 @@ public class Cliente {
         scanner = new Scanner(System.in);
         System.out.print("Entre com o chat que deseja entrar (ENTER para sair): ");
         String chatname = scanner.nextLine();
-        
-        //spaceHandler.writeClient(, nome);
-        //spaceHandler.writeInstance(spaceHandler, nome);
+        System.out.println("Done");
+        spaceHandler.writeClient(client, nome);
         
         spaceHandler.writeChatSelect(chatname, nome);
             while (true) {

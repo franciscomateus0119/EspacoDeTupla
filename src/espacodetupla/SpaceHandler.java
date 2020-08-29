@@ -1,6 +1,7 @@
 package espacodetupla;
 import net.jini.space.JavaSpace;
 
+
 public class SpaceHandler {
     private static SpaceHandler instance;
     private JavaSpace space;
@@ -31,17 +32,23 @@ public class SpaceHandler {
         private static final SpaceHandler INSTANCE = new SpaceHandler();
     }
     /*
-    public static SpaceHandler getInstance(){
-        if(instance == null){
-            instance = new SpaceHandler();
-        }
-        return instance;
-    }
-    */
-    public void writeMessage(String name, String message){
+    public void writeMessage( String name, String message){
         try{
             Message msg = new Message();
             msg.type = "Mensagem";
+            msg.name = name;
+            msg.content = message;
+            space.write(msg, null, 60 * 1000);
+        }
+        catch(Exception e){e.printStackTrace();}
+    }
+    */
+    
+    public void writeMessage(Client client, String name, String message){
+        try{
+            Message msg = new Message();
+            msg.type = "Mensagem";
+            msg.client = client;
             msg.name = name;
             msg.content = message;
             space.write(msg, null, 60 * 1000);
@@ -60,6 +67,16 @@ public class SpaceHandler {
         catch(Exception e){e.printStackTrace();}
     }
     
+    public void writeClient(Client client, String name){
+        try{
+            Message msg = new Message();
+            msg.type = "Client";
+            msg.client = client;
+            msg.name = name;
+            space.write(msg, null, 60 * 1000);
+        }
+        catch(Exception e){e.printStackTrace();}
+    }
     
     public void readMessage(){
         try {

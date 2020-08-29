@@ -5,14 +5,13 @@ import net.jini.space.JavaSpace;
 import espacodetupla.WriteMessage;
 import espacodetupla.SpaceHandler;
 import espacodetupla.ReadMessageThread;
-import espacodetupla.ReadMessageThread2;
 import espacodetupla.Client;
 
-public class Cliente {
+public class Cliente21 {
     public static void main(String[] args) {
-        
+        Client client = new Client();
         SpaceHandler spaceHandler = SpaceHandler.getInstance();
-        Runnable runnable = new ReadMessageThread2();
+        Runnable runnable = new ReadMessageThread();
         Thread thread = new Thread(runnable);
         thread.start();
         
@@ -24,10 +23,13 @@ public class Cliente {
         System.out.print("Entre com o chat que deseja entrar (ENTER para sair): ");
         String chatname = scanner.nextLine();
         
+        client.setNome(nome);
+        client.setChat(chatname);
         //spaceHandler.writeClient(, nome);
         //spaceHandler.writeInstance(spaceHandler, nome);
         
-        spaceHandler.writeChatSelect(chatname, nome);
+        spaceHandler.writeClient(client, nome);
+        spaceHandler.writeChatSelect(client.getChat(), client.getNome());
             while (true) {
                 scanner = new Scanner(System.in);
                 System.out.print("Entre com o texto da mensagem (ENTER para sair): ");
@@ -37,7 +39,7 @@ public class Cliente {
                     System.exit(0);
                 }
                 else{
-                    //spaceHandler.writeMessage(nome, message);
+                    //spaceHandler.writeMessage(client, nome, message);
                 }
                 
             }
