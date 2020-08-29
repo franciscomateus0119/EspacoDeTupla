@@ -31,8 +31,8 @@ public class SpaceHandler {
     private static class SpaceHandlerHolder{
         private static final SpaceHandler INSTANCE = new SpaceHandler();
     }
-    /*
-    public void writeMessage( String name, String message){
+    
+    public void writeMessage(String name, String message){
         try{
             Message msg = new Message();
             msg.type = "Mensagem";
@@ -42,8 +42,8 @@ public class SpaceHandler {
         }
         catch(Exception e){e.printStackTrace();}
     }
-    */
     
+    /*
     public void writeMessage(Client client, String name, String message){
         try{
             Message msg = new Message();
@@ -55,7 +55,7 @@ public class SpaceHandler {
         }
         catch(Exception e){e.printStackTrace();}
     }
-    
+    */
     public void writeChatSelect(String chatname, String name){
         try{
             Message msg = new Message();
@@ -97,4 +97,22 @@ public class SpaceHandler {
             e.printStackTrace();
         }
     }
+
+    public JavaSpace getSpace() {
+        return space;
+    }
+
+    public void setSpace(JavaSpace space) {
+        this.space = space;
+    }
+
+    public Lookup getFinder() {
+        return finder;
+    }
+
+    public void setFinder(Lookup finder) {
+        this.finder = finder;
+    }
+    
+    
 }

@@ -28,7 +28,7 @@ public class Client implements java.io.Serializable{
     }
     
     public void writeSomething(String texto){
-        System.out.println("Funcionou: " + texto);
+        System.out.println("Mensagem recebida da Thread: " + texto);
     }
     
     

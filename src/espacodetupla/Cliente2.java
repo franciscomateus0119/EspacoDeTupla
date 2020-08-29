@@ -12,7 +12,7 @@ public class Cliente2 {
     public static void main(String[] args) {
         Client client = new Client();
         SpaceHandler spaceHandler = SpaceHandler.getInstance();
-        Runnable runnable = new ReadMessageThread();
+        Runnable runnable = new ReadMessageThread(spaceHandler.getSpace());
         Thread thread = new Thread(runnable);
         thread.start();
         
@@ -23,7 +23,7 @@ public class Cliente2 {
         scanner = new Scanner(System.in);
         System.out.print("Entre com o chat que deseja entrar (ENTER para sair): ");
         String chatname = scanner.nextLine();
-        System.out.println("Done");
+        //System.out.println("Done");
         spaceHandler.writeClient(client, nome);
         
         spaceHandler.writeChatSelect(chatname, nome);
@@ -36,7 +36,7 @@ public class Cliente2 {
                     System.exit(0);
                 }
                 else{
-                    //spaceHandler.writeMessage(nome, message);
+                    spaceHandler.writeMessage(nome, message);
                 }
                 
             }

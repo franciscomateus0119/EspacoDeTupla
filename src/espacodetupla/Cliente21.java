@@ -9,6 +9,7 @@ import espacodetupla.Client;
 
 public class Cliente21 {
     public static void main(String[] args) {
+        /*
         Client client = new Client();
         SpaceHandler spaceHandler = SpaceHandler.getInstance();
         Runnable runnable = new ReadMessageThread();
@@ -42,6 +43,7 @@ public class Cliente21 {
                     //spaceHandler.writeMessage(client, nome, message);
                 }
                 
-            }
+            }*/
     }
+    
 }
